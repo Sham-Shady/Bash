@@ -8,28 +8,28 @@ cd ..
 touch index.html
 touch feat/styles/styles.css
 touch feat/scripts/main.js
-echo "<!DOCTYPE html>
-echo "<html>
-echo "<head>
-echo "    <title>
-echo "        Search Bar
-echo "    </title>
-echo "    <link rel="stylesheet" type="text/css" href="feat/styles/styles.css">
-echo "</head>
-echo "<body>
-echo "    <input id="searchbar" onkeyup="search_animal()" type="text"
-echo "        name="search" placeholder="Search animals..">
-echo "    <ol id='list'>
-echo "        <li class="animals">Monkey</li>
-echo "        <li class="animals">Turtle</li>
-echo "        <li class="animals">Whale</li>
-echo "        <li class="animals">Aligator</li>
-echo "        <li class="animals">Donkey</li>
-echo "        <li class="animals">Horse</li>
-echo "    </ol>
-echo "    <script src="./animals.js"></script>
-echo "</body>
-echo "</html>
+echo "<!DOCTYPE html>" >> index.html
+echo "<html>" >> index.html
+echo "<head>" >> index.html
+echo "    <title>" >> index.html
+echo "        Search Bar" >> index.html
+echo "    </title>" >> index.html
+echo "    <link rel="stylesheet" type="text/css" href="feat/styles/styles.css">" >> index.html
+echo "</head>" >> index.html
+echo "<body>" >> index.html
+echo "    <input id="searchbar" onkeyup="search_animal()" type="text"" >> index.html
+echo "        name="search" placeholder="Search animals..">" >> index.html
+echo "    <ol id='list'>" >> index.html
+echo "        <li class="animals">Monkey</li>" >> index.html
+echo "        <li class="animals">Turtle</li>" >> index.html
+echo "        <li class="animals">Whale</li>" >> index.html
+echo "        <li class="animals">Aligator</li>" >> index.html
+echo "        <li class="animals">Donkey</li>" >> index.html
+echo "        <li class="animals">Horse</li>" >> index.html
+echo "    </ol>" >> index.html
+echo "    <script src="./animals.js"></script>" >> index.html
+echo "</body>" >> index.html
+echo "</html>" >> index.html
 echo "
 echo "
 echo "
