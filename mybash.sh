@@ -30,44 +30,45 @@ echo "    </ol>" >> index.html
 echo "    <script src="./animals.js"></script>" >> index.html
 echo "</body>" >> index.html
 echo "</html>" >> index.html
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
-echo "
+echo "#searchbar{" >>feat/styles/styles.css
+echo "     margin-left: 15%;" >>feat/styles/styles.css
+echo "     padding:15px;" >>feat/styles/styles.css
+echo "     border-radius: 10px;" >>feat/styles/styles.css
+echo "   }" >>feat/styles/styles.css
+echo "   input[type=text] {" >>feat/styles/styles.css
+echo "      width: 30%;" >>feat/styles/styles.css
+echo "      -webkit-transition: width 0.15s ease-in-out;" >>feat/styles/styles.css
+echo "      transition: width 0.15s ease-in-out;" >>feat/styles/styles.css
+echo "   }" >>feat/styles/styles.css
+echo "   /* When the input field gets focus," >>feat/styles/styles.css
+echo "        change its width to 100% */" >>feat/styles/styles.css
+echo "   input[type=text]:focus {" >>feat/styles/styles.css
+echo "     width: 70%;" >>feat/styles/styles.css
+echo "   }" >>feat/styles/styles.css
+echo "  #list{" >>feat/styles/styles.css
+echo "    font-size:  1.5em;" >>feat/styles/styles.css
+echo "    margin-left: 90px;" >>feat/styles/styles.css
+echo "   }" >>feat/styles/styles.css
+echo ".animals{" >>feat/styles/styles.css
+echo "   display: list-item;" >>feat/styles/styles.css
+echo "  }
+echo " function search_animal() {" >> feat/scripts/main.js
+echo "    let input = document.getElementById('searchbar').value" >> feat/scripts/main.js
+echo "    input=input.toLowerCase();" >> feat/scripts/main.js
+echo "    let x = document.getElementsByClassName('animals');" >> feat/scripts/main.js
+echo "    for (i = 0; i < x.length; i++) {" >> feat/scripts/main.js
+echo "        if (!x[i].innerHTML.toLowerCase()cincludes(input)) {" >> feat/scripts/main.js
+echo "            x[i].style.display="none";" >> feat/scripts/main.js
+echo "        }" >> feat/scripts/main.js
+echo "        else {" >> feat/scripts/main.js
+echo "            x[i].style.display="list-item";" >> feat/scripts/main.js
+echo "        }" >> feat/scripts/main.js
+echo "    }" >> feat/scripts/main.js
+echo "}" >> feat/scripts/main.js
+git init
+git remote add origin "https://github.com/Sham-Shady/Bash"
+git add *
+git push
+atom feat
+atom feat/index.html
+open feat/index.html
