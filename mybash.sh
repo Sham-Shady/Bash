@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir new-project  #makes a new folder
+mkdir new-project  #makes a new folder type command 
 cd new-project #accesses the folder
 mkdir feat #makes another folder within new folder
 cd feat #accesses feat folder
